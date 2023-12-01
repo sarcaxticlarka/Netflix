@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/bg-1.jpg");
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.main .box{
+     
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+.nav{
+    height: 60px; 
+    max-width: 80vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav #logo{
+    opacity: 100%; 
+    position: relative;
+    z-index: 99;
+    width: 8.05rem;
+    height: 2.5rem;
+}
+.nav button{
+    position: relative;
+    z-index: 10;
+}
+.nav .signin{
+    background-color: rgb(229,9,20);
+    height: 2.5rem;
+    width: 4.7rem;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+     
+}
+.nav .signin:hover{
+    background-color: rgba(229, 9, 20, 0.874);
+}
+.nav .language{
+    font-weight: 550;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.347);
+    height: 2.6rem;
+    width: 7rem;
+    border-radius: 4px;
+
+}
+.hero{ 
+    position: relative;
+    z-index: 10;
+    color: white;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.hero h2{ 
+    text-align: center;
+    font-family: 'Martel Sans';
+    margin: 0 0 3px 0;
+    line-height: 1.2;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+.hero p{ 
+    text-align: center;
+    margin-bottom: 4px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+ .separation{
+    height: 7px;
+    width: 100%; 
+    background-color : rgb(69, 67, 67);  
+}
+.input-area{
+    margin-top: 15px;
+}
+.btn1{
+    user-select: none;
+    border: 0px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+.btn1:hover{
+    background-color: rgba(229, 9, 20, 0.874);
+}
+.email{
+    height: 3.4rem;
+    min-height: 16px;
+    width: 305px;
+    appearance: none;
+    background: transparent;
+    background-color: rgba(161, 160, 160, 0.238);
+    border: 0.25px solid  white;
+    border-radius: .25rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    min-width: 15px;
+    min-height: 15px;
+    padding: 0.95rem 0.95rem;
+}
+
+.first, .second, .third, .fourth{
+     
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: #fff;
+    align-items: center;
+}
+
+@media screen and (max-width:1300px){
+    .first, .second, .third, .fourth{
+        flex-wrap: wrap;
+    }
+
+}
+.secimg{
+    overflow: hidden;
+    position: relative;
+}
+.secimg img{
+
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+    width: 501px;
+
+}
+.secimg video{
+     
+    width:433px ;
+    height: 300px;
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+
+.first > div .firstchild{
+    font-size: 52px;
+    font-weight: 800;
+    padding: 30px 0;
+}
+.first > div .child2{
+    font-size: 17px;
+    font-weight: 300;
+}
+ 
+
+.second > div .firstchild{
+    font-size: 45px;
+    font-weight: 800;
+}
+.second > div .child2{
+    font-size: 17px;
+    font-weight: 300;
+} 
+
+.third> div .firstchild{
+    font-size: 42px;
+    font-weight: 800;
+}
+.third > div .child2{
+    font-size: 17px;
+    font-weight: 300;
+}
+.fourth> div .firstchild{
+    font-size: 42px;
+    font-weight: 800;
+}
+.fourth > div .child2{
+    font-size: 17px;
+    font-weight: 300;
+}
+.faq{
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.faq h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.faqbox{ 
+    transition: all 1s ease-out;
+    display: flex;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 28px auto;
+    background-color: rgba(113, 111, 111, 0.911);
+    height: 85px;  
+    font-size: 30px;
+    color: white; 
+    font-weight: 400;
+    justify-content: space-between;
+    
+}
+.faqbox svg{
+    filter: invert(1); 
+}
+ 
+.faqbox:hover{
+    background-color: rgb(92, 91, 91);  
+}
+ 
+.readytowatch h3{
+
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.readytowatch input{
+    color: white;
+    margin-top: 25px;
+    width: 450px;
+    height: 65px;
+    border: 1px solid white;
+    border-radius: 6px ; 
+    background: transparent;
+    background-color: rgba(54, 53, 53, 0.186);
+    font-size: 21px;
+    padding: 23px;
+    margin: 8px;
+}
+.readytowatch button{
+    user-select: none;
+    border: 0px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    min-height: 65px;   
+    padding: 0.75rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+.readytowatch button:hover{
+    background: rgba(222, 20, 30, 0.953);
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    font-size: 17px;
+    padding: 34px 0;
+}
+footer .questions a{
+     color: white;
+}
+
+
+.footer-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    color: white;
+   
+}
+.footer-item a{ 
+     padding: 5px;
+    color: white;
+}
+ 
